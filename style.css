@@ -47,6 +47,7 @@ body{
     border-radius: 10px; /* Rounded corners */
     font-size: 14px; /* Adjust font size as needed */
     transition: background-color 0.3s ease;
+    font-weight: 700;
 }
 .button-container a:hover {
     background-color:  hsl(75, 94%, 57%); /* Darker color on hover */
