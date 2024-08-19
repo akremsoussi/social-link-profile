@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+
+
+
 body{
     height: 100vh;
     background-color: hsl(0, 0%, 8%);
@@ -10,13 +18,67 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
+    height: fit-content;
     background-color:hsl(0, 0%, 12%);
-
+    width: 39.583vhvh;
+    height: fit-content;
+    padding: 6vh;
+    border-radius: 14px;
 }
 
-.container a{
-    margin: 10px;
-    padding: 10px;
-    
+.container p , .button-container a, .attribution{
+    font-family: Inter;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh; /* Space between buttons */
+}
+.button-container a {
+    width: 40vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center;    /* Center text vertically */
+    background-color: hsl(0, 0%, 20%); /* Button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 14px; /* Adjust font size as needed */
+    transition: background-color 0.3s ease;
+}
+.button-container a:hover {
+    background-color:  hsl(75, 94%, 57%); /* Darker color on hover */
+    color: hsl(0, 0%, 12%);
+}
+
+#avatar{
+    height: 15vh;
+    width: 15vh;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+#name{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 1vh;
+}
+#address{
+    margin-top: 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: hsl(75, 94%, 57%);
+}
+#description{
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+}
+.attribution{
+    margin-top: 1vh;
+    color: white;
 }
